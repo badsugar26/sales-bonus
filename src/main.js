@@ -49,6 +49,11 @@ function analyzeSalesData(data, options) {
         throw new Error('Некорректные входные данные');
     };
 
+    if (!data.purchase_records || data.purchase_records.length === 0) {
+        throw new Error('Массив purchase_records пуст');
+        // Или вернуть пустой массив: return [];
+    }
+
     // @TODO: Проверка наличия опций
 
     if (!options || typeof options !== 'object') {
@@ -80,11 +85,6 @@ function analyzeSalesData(data, options) {
     // @TODO: Расчет выручки и прибыли для каждого продавца
 
     data.purchase_records.forEach(record => {
-        if (!data.purchase_records || data.purchase_records.length === 0) {
-            throw new Error('Массив purchase_records пуст');
-            // Или вернуть пустой массив: return [];
-        }
-
         const seller = sellerIndex[record.seller_id];
         seller.sales_count +=1;
         
