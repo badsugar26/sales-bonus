@@ -44,7 +44,7 @@ function analyzeSalesData(data, options) {
 
     if (!data
         || !Array.isArray(data.sellers)
-        || data.sellers.length === 0 
+        || data.sellers.length === 0
     ) {
         throw new Error('Некорректные входные данные');
     };
@@ -102,7 +102,7 @@ function analyzeSalesData(data, options) {
         });
 
         seller.revenue += totalRevenue;
-        seller.profit += totalProfit;   
+        seller.profit += totalProfit;
         });
 
     // @TODO: Сортировка продавцов по прибыли
@@ -120,7 +120,7 @@ function analyzeSalesData(data, options) {
 
         seller.top_products = top10Products; // Формируем топ-10 товаров
       
-    }); 
+    });
 
     // @TODO: Подготовка итоговой коллекции с нужными полями
 
@@ -132,6 +132,5 @@ function analyzeSalesData(data, options) {
         sales_count: seller.sales_count, // Целое число, количество продаж продавца
         top_products: seller.top_products, // Целое число, топ-10 товаров продавца
         bonus: +seller.bonus.toFixed(2) // Число с двумя знаками после точки, бонус продавца
-    })); 
-
-}; 
+    }));
+};
