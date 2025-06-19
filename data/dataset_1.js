@@ -831,7 +831,7 @@ const data = {
                     "sku": "SKU_027",
                     "discount": 7.68,
                     "quantity": 1,
-                    "sale_price": 919.11
+                    "sale_price": 919.07
                 },
                 {
                     "sku": "SKU_091",
@@ -937,7 +937,7 @@ const data = {
                     "sku": "SKU_040",
                     "discount": 9.86,
                     "quantity": 3,
-                    "sale_price": 461.345
+                    "sale_price": 461.33
                 },
                 {
                     "sku": "SKU_050",
@@ -981,7 +981,7 @@ const data = {
                     "sku": "SKU_039",
                     "discount": 3.95,
                     "quantity": 1,
-                    "sale_price": 1179.15
+                    "sale_price": 1179.14
                 },
                 {
                     "sku": "SKU_056",
